@@ -1,0 +1,156 @@
+body {
+    background: #3d3e45;
+    font-family: microsoft yahei,arial,helvetica,sans-serif;
+}
+.none{
+    display: none
+}
+.al-doc{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+.doc-wrap{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.doc-render{
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin: -444px 0 0 -667px;
+    background: #fbfaf8;
+    box-shadow: 0 0 80px rgba(0,0,0,.45);
+    z-index: 5;
+    font-size: 18px;
+}
+.doc-padding{
+    padding: 20px 80px;
+}
+.content {
+    font-family: SimSun, 宋体, "Heiti SC";
+}
+.content .title h1{
+    font-weight: normal;
+    font-size: 27px;
+    color: rgb(9, 51, 133);
+}
+.titleInfo{
+    font-size: 18px;
+    color: #000
+}
+.test{
+    width: calc(50% - 80px);
+    line-height: 30px;
+}
+.test p{
+    text-indent: 2em;
+}
+.thrumb{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 667px;
+    padding: 40px 0 10px;
+    background: #fbfaf8;
+    box-shadow: 0 0 120px rgba(0,0,0,.45);
+    z-index: 200;
+}
+.thrumb .title{
+    position: relative;
+    height: 60px;
+    margin: 0 50px;
+    font-size: 14px;
+}
+.thrumb .title h1 {
+    color: #333;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 16px;
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tab,
+.tabcontent{
+    padding: 0 50px;
+    
+}
+.tabcontent {
+    overflow: scroll;
+    position: absolute;
+    top: 140px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+.tabwrap{
+    border: 1px solid #cecdcc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tab span.active{
+    background: #f2ebe5;
+}
+.tab span{
+    display:block;
+    float: left;
+    width: 33%;
+    border-right: 1px solid #cecdcc;
+    text-align: center;
+    color: #a88466;
+    font-size: 16px;
+    cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+}
+.tabc ul{
+    padding-left: 0;
+}
+.tabc li {
+    list-style-type: none;
+    border-bottom: 1px dashed #e5e0d8
+}
+.tabc li a:hover{
+    color: #ed6c00;
+    text-decoration: none;
+}
+.tabc li a {
+    color: #613f23;
+    display: block;
+    padding: 18px 80px 18px 0;
+    line-height: 20px;
+    font-size: 14px;
+    text-decoration: none
+}
+.subTabc{
+    border-top: 1px dashed #e5e0d8
+}
+.subTabc li a{
+    text-indent: 20px;
+}
+.subTabc li:last-child{
+    border-bottom: none
+}
+.icon {
+    background: url(../images/reader.png?201803272044) no-repeat;
+}
+.close{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-position: -68px -398px;
+    cursor: pointer
+}
